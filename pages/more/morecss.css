@@ -1,0 +1,315 @@
+@font-face {
+  font-family: 'Poppins';
+  src: url(../about/Poppins-Regular.ttf) format('.ttf'),
+  
+}
+
+
+body {
+    position: relative;
+    margin: 0;
+  }
+
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  }
+>>>>>>> 1121ba1d2034411123757de05ebb88395fb1af09
+=======
+>>>>>>> 069c72a (mobile video update)
+  .preload * { 
+    transition: none !important;
+    animation-duration: 0.001s !important; 
+  }
+
+  a {
+    color: #f0ca5a; /* Hex code for orange-red */
+  }
+  
+  body::before {
+    content: "";
+    position: fixed; /* Keeps the background in place while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Places the image behind your text/content */
+    opacity: 0.4;
+    
+    /* Your background image */
+    background-color: #44773a;
+    background-size: cover;
+    
+    /* The mask (can be a PNG, SVG, or Gradient) */
+    mask-image: url('sedgebackL.png');
+    
+    /* Optional: Adjust mask behavior */
+    -webkit-mask-size: contain;
+    mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+
+  .home{
+    position: fixed;
+    left: 85%;
+    width: 7vw;
+    height: auto;
+    z-index: 1000;
+    margin-top: 2vh;
+  }
+  
+  #smooth-wrapper { 
+    width: 100%;
+ }
+
+#smooth-content {
+    overflow: visible;
+    will-change: transform;
+}
+
+  .signWrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.moreSign {
+    max-width: 30vw;
+    margin-top: 10vh;
+    transform: translateX(50%)
+}
+
+.moreSign img {
+    width: 100%;
+}
+
+.slideWrap {
+  display: flex;
+  max-width: 100%;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+  /*opacity: 0;
+  animation: show 5s;
+  animation-fill-mode: forwards;
+  
+  animation-delay: 1s;*/
+
+}
+
+/*@keyframes show {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}*/
+
+.row{
+  position: relative;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  z-index: 3;
+
+}
+
+#row img {
+  height: 40vh ;
+  mask-image: url(mask.png);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+    margin: 0%;
+}
+
+#slide1 {
+  position: absolute;
+  transform: translateX(-15%);
+  margin: 0;
+  animation: slide1 4s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes slide1 {
+  from { transform: translateX(-15%); }
+  to { transform: translateX(200vw); }
+}
+
+#slide2 {
+  position: absolute;
+  top: 33vh;
+  transform: translateX(40%);
+  margin: 0;
+  animation: slide2 5s;
+  animation-fill-mode: forwards;
+  animation-delay: 1s;
+}
+
+@keyframes slide2 {
+  from { transform: translateX(40%); }
+  to { transform: translateX(-200vw); }
+}
+
+#slide3 {
+  position: absolute;
+  margin: 0;
+  top: 90vh;
+}
+
+
+.flexItem {
+  display: flex;
+  flex-direction: row;
+  max-width: 100vw;
+  padding: 1vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconCell {
+  display: flex;
+  margin: 5vw;
+  flex-basis: 8vw;
+  justify-content: center;
+  animation: show 5s;
+  opacity: 0;
+  animation-fill-mode: forwards;
+  animation-delay: 1.5s;
+
+}
+
+@keyframes show {
+  from { opacity: 0; scale: 0;}
+  to { opacity: 1; scale: 1; }
+}
+
+.iconCell img {
+width: 100%;
+}
+
+.wordCell {
+  flex-basis: 70vw;
+}
+
+#wordCell1 {
+animation: show2 5s;
+  opacity: 0;
+  animation-name: show2;
+  animation-fill-mode: forwards;
+  animation-delay: 1.2s;
+}
+
+@keyframes show2 {
+  from { opacity: 0; transform: translateY(200vw);}
+  to { opacity: 1; transform: translateY(0); }
+}
+
+#wordCell2 {
+  animation: show2 5s;
+    opacity: 0;
+    animation-name: show3;
+    animation-fill-mode: forwards;
+    animation-delay: 1.2s;
+  }
+  
+  @keyframes show3 {
+    from { opacity: 0; transform: translateY(-200vw);}
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+
+.wordCell p {
+  font-family: 'Poppins';
+  color: #44773a;
+  font-size: 1.2vw;
+  margin-left: 10vw;
+  margin-right: 10vw;
+  border: solid #f0ca5a;
+  padding: 1vw;
+  border-radius: 14px;
+}
+
+.flexItem img {
+  max-width: 100%;
+}
+
+.space {
+  max-width: 100%;
+  height: 20vh;
+}
+
+
+  @media (orientation: portrait) {
+    body::before {
+        mask-image: url(sedgebackP.png);
+    }
+
+    .signWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .home {
+        width: 10vw;
+    }
+
+    .moreSign {
+        margin-top: 5vh;
+        max-width: 30vw;
+        transform: translateX(0%)
+    }
+
+    #row img {
+      height: 30vh ;
+    }
+
+    #slide2 {
+      position: absolute;
+      top: 33vh;
+      transform: translateX(11%);
+    }
+
+    @keyframes slide2 {
+      from { transform: translateX(11%); }
+      to { transform: translateX(-300vw); }
+    }
+    
+    .flexItem {
+      flex-direction: column;
+      justify-content: normal;
+    }
+
+    .iconCell {
+      max-width: 10vw;
+      margin: 0%;
+      flex-basis: 0;
+    }
+
+    .wordCell {
+  flex-basis: auto;
+}
+
+    .wordCell p {
+      font-size: 2vw;
+    }
+
+
+  }
+
+  @media (orientation: landscape) and (width>1000px){
+    .wordCell p {
+      font-size: 0.9vw;
+    }
+
+    .iconCell {
+      flex-basis: 8vw;
+    }
+
+    .wordCell {
+      flex-basis: 65vw;
+    }
+  }

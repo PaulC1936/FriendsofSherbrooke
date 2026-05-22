@@ -1,0 +1,1679 @@
+
+body{
+    height: 100vh;
+    max-width: 100%;
+    background-color: #d2b48c;
+    margin: 0%;
+    overflow: hidden;
+    
+}
+
+.pageWrapper {
+    position: relative; 
+    max-width: 100%;
+    height: 150vh;
+    overflow: hidden;
+    z-index: 1;
+    background-image: url(LANDFOSF.webp);
+    background-size: cover;
+
+}
+
+.smoothWrapper {
+    max-width: 100%;
+}
+
+.scrollCont {
+    display: grid;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(10, 1fr);
+    place-items: center;
+    z-index: 2;
+}
+.flexMenu {
+    max-width: 100%;
+    z-index: 2000;
+    opacity: 0;
+}
+
+.flexMenu:hover {
+    box-shadow: none;
+}
+
+#about{
+    grid-column: 1/3;
+    grid-row: 6/7;
+}
+
+#about img {
+    max-width: 15vw;
+}
+
+#contact{
+    grid-column: 1/3;
+    grid-row: 7/8;
+}
+
+#contact img {
+    max-width: 15vw;
+}
+
+#more{
+    grid-column: 1/3;
+    grid-row: 8/9;
+}
+
+#more img {
+    max-width: 15vw;
+}
+
+.fernyvid {
+    max-width: 100%;
+    margin-left: -5vw;
+    margin-top: 5vw;
+    grid-column: 2/8;
+    grid-row: 4/8;
+}
+
+.frond {
+    display: none;
+    position: absolute;
+    top: 75%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    max-height: 70vh;
+    mask-image: url(fernfrond.webp);
+    mask-repeat: no-repeat; 
+    mask-size: contain;
+    overflow: hidden;
+    mask-position: center;
+}
+
+
+.hand {
+    grid-column: 2/3;
+    grid-row: 3/3;
+    place-items: center;
+    max-width: 20vw;
+    z-index: 300;
+    display: none;
+
+}
+
+
+
+.logoDiv {
+    grid-column: 7/8;
+    grid-row: 9/9;
+    max-width: 30vw;
+    z-index: 400;
+    grid-gap: 2vw;
+}  
+
+.flexWrapper {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.fbLogo img {
+    max-width: 5vw;
+}
+
+
+.igLogo img {
+    max-width: 5vw;
+    margin-left: 1vw;
+}
+
+.loading {
+    max-width: 30vw;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 900;
+  }
+
+
+/* GRASS L */
+.grassLCanvas{
+    position: absolute;
+    top: 70%;
+    left: 6%;
+    width: 162px;
+    height: 184px;
+    z-index: 200;
+    overflow: hidden;
+    transform: rotate(20deg) scale(0.2);
+    }
+/* GRASS L COPIES*/
+#copyOne {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    width: 162px;
+    height: 184px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: rotate(20deg) scale(0.2);
+}
+
+#copyTwo {
+    position: absolute;
+    top: 70%;
+    left: 25%;
+    width: 162px;
+    height: 184px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: rotate(10deg) scale(0.2);
+}
+
+#copyThree {
+    position: absolute;
+    top: 52%;
+    left: 29%;
+    width: 162px;
+    height: 184px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: rotate(30deg) scale(0.2);
+}
+
+#copyFour {
+    position: absolute;
+    top: 25%;
+    left: -10%;
+    width: 162px;
+    height: 184px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: rotate(25deg) scale(0.2);
+}
+
+#copyFive {
+    position: absolute;
+    top: 55%;
+    left: 64%;
+    width: 162px;
+    height: 184px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: rotate(22deg) scale(0.2);
+}
+
+#copySix {
+    position: absolute;
+    top: 45%;
+    left: 0%;
+    width: 162px;
+    height: 184px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: rotate(35deg) scale(0.2);
+}
+
+#copySeven {
+    position: absolute;
+    top: 73%;
+    left: 42%;
+    width: 162px;
+    height: 184px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: rotate(45deg) scale(0.2);
+}
+
+#copyEight {
+    position: absolute;
+    top: 66%;
+    left: 12%;
+    width: 162px;
+    height: 184px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: rotate(25deg) scale(0.2);
+}
+/*Treeferns*/
+#treefernOne {
+    position: absolute;
+    top: 3%;
+    left: 5%;
+    width: 176px;
+    height: 170px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.6);
+}
+
+#treefernTwo {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    width: 176px;
+    height: 170px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.6);
+}
+
+#treefernThree {
+    position: absolute;
+    top: 43%;
+    left: 40%;
+    width: 176px;
+    height: 170px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.6);
+}
+
+/*SEDGES*/
+#sedgeOne{
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.2);
+}
+
+#sedgeTwo{
+    position: absolute;
+    top: 10%;
+    left: 45%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.2);
+}
+
+#sedgeThree{
+    position: absolute;
+    top: 55%;
+    left: 8%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.2);
+}
+
+#sedgeFour{
+    position: absolute;
+    top: 60%;
+    left: 85%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.2);
+}
+
+#sedgeFive{
+    position: absolute;
+    top: 38%;
+    left: 70%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.2);
+}
+
+#sedgeSix{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.2);
+}
+
+#sedgeSeven{
+    position: absolute;
+    top: 42%;
+    left: 17%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.2);
+}
+
+#sedgeEight{
+    position: absolute;
+    top: 22%;
+    left: -2%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.2);
+}
+
+#sedgeNine{
+    position: absolute;
+    top: 10%;
+    left: 62%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.2);
+}
+
+#sedgeTen{
+    position: absolute;
+    top: 43%;
+    left: -7%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.2);
+}
+
+#sedgeEleven{
+    position: absolute;
+    top: 60%;
+    left: 60%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.2);
+}
+
+#sedgeTwelve{
+    position: absolute;
+    top: 5%;
+    left: 35%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.2);
+}
+
+/*grassR*/
+#grassROne{
+    position: absolute;
+    top: 0%;
+    left: 85%;
+    width: 173px;
+    height: 155px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.2) rotate(-25deg);
+}
+
+#grassRTwo{
+    position: absolute;
+    top: 55%;
+    left: 68%;
+    width: 173px;
+    height: 155px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.2) rotate(-25deg);
+}
+
+#grassRThree{
+    position: absolute;
+    top: 40%;
+    left: 65%;
+    width: 173px;
+    height: 155px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.2) rotate(-20deg);
+}
+
+#grassRFour{
+    position: absolute;
+    top: 12%;
+    left: 60%;
+    width: 173px;
+    height: 155px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.2) rotate(-23deg);
+}
+
+#grassRFive{
+    position: absolute;
+    top: 48%;
+    left: 50%;
+    width: 173px;
+    height: 155px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.2) rotate(-10deg);
+}
+
+#grassRSix{
+    position: absolute;
+    top: 2%;
+    left: 50%;
+    width: 173px;
+    height: 155px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.2);
+}
+
+/*GrassR animation*/
+.grassRSpritesheet {
+    animation: grassRplay 2s steps(20) infinite;
+}
+
+@keyframes grassRplay {
+    from {
+        transform: translate3d(0px, 0, 0);
+    }
+    to {
+        transform: translate3d(-3460px, 0, 0);
+    }
+
+}
+
+/*GrassR hover and active animation*/
+.grassRSpritesheet:hover {
+    animation: grassRhover 1s steps(9) infinite;
+}
+
+@keyframes grassRhover {
+    from {
+        transform: translate3d(-3460px, 0, 0);
+    }
+    to {
+        transform: translate3d(-5017px, 0, 0);
+    }
+
+}
+
+/*Sedge animation*/
+.sedgeSpritesheet {
+    animation: sedgeplay 2s steps(20) infinite;
+}
+
+@keyframes sedgeplay {
+    from {
+        transform: translate3d(0px, 0, 0);
+    }
+    to {
+        transform: translate3d(-3520px, 0, 0);
+    }
+
+}
+
+/*Sedge hover and active animation*/
+.sedgeSpritesheet:hover {
+    animation: sedgehover 1s steps(9) infinite;
+}
+
+@keyframes sedgehover {
+    from {
+        transform: translate3d(-3520px, 0, 0);
+    }
+    to {
+        transform: translate3d(-5104px, 0, 0);
+    }
+
+}
+
+.sedgeSpritesheet:active {
+    animation: sedgehover 1s steps(9) infinite;
+}
+
+@keyframes sedgehover {
+    from {
+        transform: translate3d(-3520px, 0, 0);
+    }
+    to {
+        transform: translate3d(-5104px, 0, 0);
+    }
+
+}
+
+/*Treefern animation*/
+.treefernSpritesheet {
+    animation: fernplay 2s steps(20) infinite;
+}
+
+@keyframes fernplay {
+    from {
+        transform: translate3d(0px, 0, 0);
+    }
+    to {
+        transform: translate3d(-3520px, 0, 0);
+    }
+
+}
+
+/*Treefern hover and active animation*/
+.treefernSpritesheet:hover {
+    animation: fernhover 1s steps(9) infinite;
+}
+
+@keyframes fernhover {
+    from {
+        transform: translate3d(-3520px, 0, 0);
+    }
+    to {
+        transform: translate3d(-5104px, 0, 0);
+    }
+
+}
+
+.treefernSpritesheet:active {
+    animation: fernhover 1s steps(9) infinite;
+}
+
+@keyframes fernhover {
+    from {
+        transform: translate3d(-3520px, 0, 0);
+    }
+    to {
+        transform: translate3d(-5104px, 0, 0);
+    }
+
+}
+
+/* GRASS L ANIMATION*/
+.grassLSpritesheet {
+    animation: play 2s steps(20) infinite;
+}
+
+@keyframes play {
+    from {
+        transform: translate3d(0px, 0, 0);
+    }
+    to {
+        transform: translate3d(-3240px, 0, 0);
+    }
+
+}
+/* GRASS L HOVER AND ACTIVE ANIMATION*/
+.grassLSpritesheet:hover{
+    animation: hoverplay 2s steps(10) infinite;
+}
+
+@keyframes hoverplay {
+    from {
+        transform: translate3d(-3240px, 0, 0);
+    }
+    to {
+        transform: translate3d(-4860px, 0, 0);
+    }
+
+}
+
+.grassLSpritesheet:active{
+    animation: hoverplay 2s steps(10) infinite;
+}
+
+@keyframes hoverplay {
+    from {
+        transform: translate3d(-3240px, 0, 0);
+    }
+    to {
+        transform: translate3d(-4860px, 0, 0);
+    }
+
+}
+    
+    
+    
+
+/*LANDSCAPE MEDIA QUERY*/
+@media (orientation: landscape) {
+    .scrollCont {
+        display: grid;
+        width: 100%;
+        height: 100vh;  
+        overflow: hidden;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(10, 1fr);
+        place-items: center;
+        z-index: 2;
+    }
+
+    
+    .fernyvid {
+        max-width: 100%;
+        grid-column: 3 / 7;
+    }
+
+
+    #about {
+        grid-column: 7 / 8;
+        grid-row: 9 / 10;
+    }
+
+    #contact {
+        grid-column: 2 / 3;
+        grid-row: 9 / 10;
+        /* margin-top: 35vh; */
+    }
+
+    #more {
+        grid-column: 2 / 3;
+        grid-row: 10 / 11;
+        white-space: nowrap;
+    }
+    
+    .hand {
+        grid-column: 2/3;
+        grid-row: 3/3;
+        place-items: center;
+        max-width: 10vw;
+        z-index: 300;
+        display: none;
+    }
+
+    .loading {
+        max-width: 10vw;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 900;
+      }
+    
+
+    .frond {
+        display: none;
+        position: absolute;
+        top: 82%;
+        left: 45%;
+        transform: translate(-50%, -50%);
+        z-index: 3;
+        max-height: 80vh;
+        mask-image: url(fernfrond.webp);
+        mask-repeat: no-repeat; 
+        mask-size: contain;
+        overflow: hidden;
+        mask-position: center;
+    }
+
+    .logoDiv {
+        grid-column: 7/7;
+        grid-row: 10/11;
+        max-width: 10vw;
+        z-index: 400;
+        white-space: nowrap;
+        align-self: center;
+    }
+
+    .fbLogo img {
+        max-width: 2vw;
+    }
+
+    .igLogo img {
+        max-width: 2vw;
+    }
+
+    .flexWrapper {
+        display: flex;
+        justify-content: space-evenly;
+    }
+    
+    
+
+    /* GRASS L */
+.grassLCanvas{
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    width: 162px;
+    height: 184px;
+    z-index: 200;
+    overflow: hidden;
+    transform: rotate(20deg) scale(0.3);
+    }
+/* GRASS L COPIES*/
+#copyOne {
+    position: absolute;
+    top: 49%;
+    left: 5%;
+    width: 162px;
+    height: 184px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: rotate(20deg) scale(0.3);
+}
+
+#copyTwo {
+    position: absolute;
+    top: 39%;
+    left: 15%;
+    width: 162px;
+    height: 184px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: rotate(10deg) scale(0.3);
+}
+
+#copyThree {
+    position: absolute;
+    top: 4%;
+    left: 35%;
+    width: 162px;
+    height: 184px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: rotate(30deg) scale(0.3);
+}
+
+#copyFour {
+    position: absolute;
+    top: 48%;
+    left: 20%;
+    width: 162px;
+    height: 184px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: rotate(25deg) scale(0.3);
+}
+
+#copyFive {
+    position: absolute;
+    top: 49%;
+    left: 32%;
+    width: 162px;
+    height: 184px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: rotate(22deg) scale(0.3);
+}
+
+#copySix {
+    position: absolute;
+    top: 55%;
+    left: 46%;
+    width: 162px;
+    height: 184px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: rotate(35deg) scale(0.3);
+}
+
+#copySeven {
+    position: absolute;
+    top: 60%;
+    left: 22%;
+    width: 162px;
+    height: 184px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: rotate(45deg) scale(0.3);
+}
+
+#copyEight {
+    position: absolute;
+    top: 80%;
+    left: 12%;
+    width: 162px;
+    height: 184px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: rotate(25deg) scale(0.3);
+}
+/*Treeferns*/
+#treefernOne {
+    position: absolute;
+    top: 29%;
+    left: 12%;
+    width: 176px;
+    height: 170px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.8);
+}
+
+#treefernTwo {
+    position: absolute;
+    top: 49%;
+    left: 76%;
+    width: 176px;
+    height: 170px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.8);
+}
+
+#treefernThree {
+    position: absolute;
+    top: 60%;
+    left: 54%;
+    width: 176px;
+    height: 170px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.8);
+}
+
+/*SEDGES*/
+#sedgeOne{
+    position: absolute;
+    top: 45%;
+    left: 60%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.3);
+}
+
+#sedgeTwo{
+    position: absolute;
+    top: 13%;
+    left: 55%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.3);
+}
+
+#sedgeThree{
+    position: absolute;
+    top: 46%;
+    left: 42%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.3);
+}
+
+#sedgeFour{
+    position: absolute;
+    top: 47%;
+    left: 5%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.3);
+}
+
+#sedgeFive{
+    position: absolute;
+    top: 38%;
+    left: 76%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.3);
+}
+
+#sedgeSix{
+    position: absolute;
+    top: 10%;
+    left: 20%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.3);
+}
+
+#sedgeSeven{
+    position: absolute;
+    top: 70%;
+    left: 37%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.3);
+}
+
+#sedgeEight{
+    position: absolute;
+    top: 12%;
+    left: 13%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.3);
+}
+
+#sedgeNine{
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.3);
+}
+
+#sedgeTen{
+    position: absolute;
+    top: 23%;
+    left: 75%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.3);
+}
+
+#sedgeEleven{
+    position: absolute;
+    top: 60%;
+    left: 63%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.3);
+}
+
+#sedgeTwelve{
+    position: absolute;
+    top: 5%;
+    left: 45%;
+    width: 176px;
+    height: 154px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.3);
+}
+
+/*grassR*/
+#grassROne{
+    position: absolute;
+    top: 5%;
+    left: 75%;
+    width: 173px;
+    height: 155px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.3) rotate(-25deg);
+}
+
+#grassRTwo{
+    position: absolute;
+    top: 72%;
+    left: 78%;
+    width: 173px;
+    height: 155px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.3) rotate(-25deg);
+}
+
+#grassRThree{
+    position: absolute;
+    top: 80%;
+    left: 68%;
+    width: 173px;
+    height: 155px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.3) rotate(-20deg);
+}
+
+#grassRFour{
+    position: absolute;
+    top: 80%;
+    left: 85%;
+    width: 173px;
+    height: 155px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.3) rotate(-23deg);
+}
+
+#grassRFive{
+    position: absolute;
+    top: 68%;
+    left: 72%;
+    width: 173px;
+    height: 155px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.3) rotate(-10deg);
+}
+
+#grassRSix{
+    position: absolute;
+    top: 8%;
+    left: 80%;
+    width: 173px;
+    height: 155px;
+    z-index: 201;
+    overflow: hidden;   
+    transform: scale(0.3);
+}
+
+}
+
+/*LARGE LANDSCAPE */
+
+@media (orientation: landscape) and (width >1020px){
+
+    
+    
+    .frond {
+        top: 80%;
+        left: 47%;
+        max-height: 70vh;
+    }
+
+}
+
+/*LANDSCAPE PHONE MEDIA QUERY*/
+@media (orientation: landscape) and (width <700px){
+
+    .frond {
+        top: 85%;
+        left: 47%;
+        max-height: 60vh;
+    }
+
+    .fernyvid {
+        margin-top: 20vh;
+    }
+
+    #treefernOne{
+        left: 10%;
+        top: 20%;
+    }
+    #treefernThree{
+        top: 83%;
+        left: 45%;
+    }
+    .hand {
+        max-width: 20%;
+    }
+    .grassLCanvas {
+        transform: rotate(20deg) scale(0.2);
+    }
+    #copyOne {
+
+        transform: rotate(20deg) scale(0.2);
+    }
+    
+    #copyTwo {
+        
+        transform: rotate(10deg) scale(0.2);
+    }
+    
+    #copyThree {
+
+        transform: rotate(30deg) scale(0.2);
+    }
+    
+    #copyFour {
+
+        transform: rotate(25deg) scale(0.2);
+        top: -10%;
+        left: 70%;
+    }
+    
+    #copyFive {
+
+        transform: rotate(22deg) scale(0.2);
+    }
+    
+    #copySix {
+
+        transform: rotate(35deg) scale(0.2);
+        top: 50%;
+        left: 0%;
+    }
+    
+    #copySeven {
+
+        transform: rotate(45deg) scale(0.2);
+    }
+    
+    #copyEight {
+
+        transform: rotate(25deg) scale(0.2);
+    }
+
+    #treefernOne {
+  
+        transform: scale(0.6);
+        top: 10%;
+        left: 5%;
+    }
+    
+    #treefernTwo {
+ 
+        transform: scale(0.6);
+
+    }
+    
+    #treefernThree {
+ 
+        transform: scale(0.6);
+        top: 70%;
+    }
+    
+    /*SEDGES*/
+    #sedgeOne{
+ 
+        transform: scale(0.2);
+    }
+    
+    #sedgeTwo{
+  
+        transform: scale(0.2);
+    }
+
+    #sedgeTwo{
+  
+        transform: scale(0.2);
+    }
+    
+    #sedgeThree{
+
+        transform: scale(0.2);
+    }
+    
+    #sedgeFour{
+ 
+        transform: scale(0.2);
+    }
+    
+    #sedgeFive{
+  
+        transform: scale(0.2);
+    }
+    
+    #sedgeSix{
+ 
+        transform: scale(0.2);
+        top: 65%;
+        left: -15%;
+    }
+    
+    #sedgeSeven{
+  
+        transform: scale(0.2);
+    }
+    
+    #sedgeEight{
+
+        transform: scale(0.2);
+    }
+    
+    #sedgeNine{
+  
+        transform: scale(0.2);
+    }
+    
+    #sedgeTen{
+ 
+        transform: scale(0.2);
+    }
+    
+    #sedgeEleven{
+ 
+        transform: scale(0.2);
+    }
+    
+    #sedgeTwelve{
+ 
+        transform: scale(0.2);
+    }
+    
+    /*grassR*/
+    #grassROne{
+
+        transform: scale(0.2) rotate(-25deg);
+    }
+    
+    #grassRTwo{
+
+        transform: scale(0.2) rotate(-25deg);
+    }
+    
+    #grassRThree{
+
+        transform: scale(0.2) rotate(-20deg);
+        top: 30%;
+    }
+    
+    #grassRFour{
+
+        transform: scale(0.2) rotate(-23deg);
+        top: 32%;
+        left: 0%;
+    }
+    
+    #grassRFive{
+  
+        transform: scale(0.2) rotate(-10deg);
+    }
+    
+    #grassRSix{
+ 
+        transform: scale(0.2);
+    }
+}   
+
+/*PORTRAIT - TABLETS*/
+@media (orientation: portrait) and (750px <= width <= 1050px){
+    .hand{
+        margin-left: 5%;
+        
+    }
+
+    .loading {
+        margin-left: 5%;
+    }
+
+    .grassLCanvas{
+        position: absolute;
+        top: 80%;
+        left: 6%;
+        width: 162px;
+        height: 184px;
+        z-index: 200;
+        overflow: hidden;
+        transform: rotate(20deg) scale(0.4);
+        }
+    /* GRASS L COPIES*/
+    #copyOne {
+        position: absolute;
+        top: 17%;
+        left: 10%;
+        width: 162px;
+        height: 184px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: rotate(20deg) scale(0.4);
+    }
+    
+    #copyTwo {
+        position: absolute;
+        top: 45%;
+        left: 25%;
+        width: 162px;
+        height: 184px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: rotate(10deg) scale(0.4);
+    }
+    
+    #copyThree {
+        position: absolute;
+        top: 42%;
+        left: 36%;
+        width: 162px;
+        height: 184px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: rotate(30deg) scale(0.4);
+    }
+    
+    #copyFour {
+        position: absolute;
+        top: 48%;
+        left: 55%;
+        width: 162px;
+        height: 184px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: rotate(25deg) scale(0.4);
+    }
+    
+    #copyFive {
+        position: absolute;
+        top: 55%;
+        left: 32%;
+        width: 162px;
+        height: 184px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: rotate(22deg) scale(0.4);
+    }
+    
+    #copySix {
+        position: absolute;
+        top: 35%;
+        left: 0%;
+        width: 162px;
+        height: 184px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: rotate(35deg) scale(0.4);
+    }
+    
+    #copySeven {
+        position: absolute;
+        top: 73%;
+        left: 22%;
+        width: 162px;
+        height: 184px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: rotate(45deg) scale(0.4);
+    }
+    
+    #copyEight {
+        position: absolute;
+        top: 80%;
+        left: 8%;
+        width: 162px;
+        height: 184px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: rotate(25deg) scale(0.4);
+    }
+
+    #treefernOne {
+        position: absolute;
+        top: 3%;
+        left: 5%;
+        width: 176px;
+        height: 170px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(1);
+    }
+    
+    #treefernTwo {
+        position: absolute;
+        top: 55%;
+        left: 75%;
+        width: 176px;
+        height: 170px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(1);
+    }
+    
+    #treefernThree {
+        position: absolute;
+        top: 16%;
+        left: 55%;
+        width: 176px;
+        height: 170px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(1);
+    }
+    
+    /*SEDGES*/
+    #sedgeOne{
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        width: 176px;
+        height: 154px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(0.4);
+    }
+    
+    #sedgeTwo{
+        position: absolute;
+        top: 20%;
+        left: 45%;
+        width: 176px;
+        height: 154px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(0.4);
+    }
+
+    #sedgeTwo{
+        position: absolute;
+        top: 20%;
+        left: 45%;
+        width: 176px;
+        height: 154px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(0.4);
+    }
+    
+    #sedgeThree{
+        position: absolute;
+        top: 52%;
+        left: 8%;
+        width: 176px;
+        height: 154px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(0.4);
+    }
+    
+    #sedgeFour{
+        position: absolute;
+        top: 100%;
+        left: 85%;
+        width: 176px;
+        height: 154px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(0.4);
+    }
+    
+    #sedgeFive{
+        position: absolute;
+        top: 38%;
+        left: 76%;
+        width: 176px;
+        height: 154px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(0.4);
+    }
+    
+    #sedgeSix{
+        position: absolute;
+        top: 10%;
+        left: 20%;
+        width: 176px;
+        height: 154px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(0.4);
+    }
+    
+    #sedgeSeven{
+        position: absolute;
+        top: 65%;
+        left: 37%;
+        width: 176px;
+        height: 154px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(0.4);
+    }
+    
+    #sedgeEight{
+        position: absolute;
+        top: 22%;
+        left: -2%;
+        width: 176px;
+        height: 154px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(0.4);
+    }
+    
+    #sedgeNine{
+        position: absolute;
+        top: 10%;
+        left: 62%;
+        width: 176px;
+        height: 154px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(0.4);
+    }
+    
+    #sedgeTen{
+        position: absolute;
+        top: 23%;
+        left: 75%;
+        width: 176px;
+        height: 154px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(0.4);
+    }
+    
+    #sedgeEleven{
+        position: absolute;
+        top: 65%;
+        left: 60%;
+        width: 176px;
+        height: 154px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(0.4);
+    }
+    
+    #sedgeTwelve{
+        position: absolute;
+        top: 5%;
+        left: 35%;
+        width: 176px;
+        height: 154px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(0.4);
+    }
+    
+    /*grassR*/
+    #grassROne{
+        position: absolute;
+        top: 0%;
+        left: 85%;
+        width: 173px;
+        height: 155px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(0.4) rotate(-25deg);
+    }
+    
+    #grassRTwo{
+        position: absolute;
+        top: 72%;
+        left: 78%;
+        width: 173px;
+        height: 155px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(0.4) rotate(-25deg);
+    }
+    
+    #grassRThree{
+        position: absolute;
+        top: 75%;
+        left: 65%;
+        width: 173px;
+        height: 155px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(0.4) rotate(-20deg);
+    }
+    
+    #grassRFour{
+        position: absolute;
+        top: 80%;
+        left: 80%;
+        width: 173px;
+        height: 155px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(0.4) rotate(-23deg);
+    }
+    
+    #grassRFive{
+        position: absolute;
+        top: 68%;
+        left: 70%;
+        width: 173px;
+        height: 155px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(0.4) rotate(-10deg);
+    }
+    
+    #grassRSix{
+        position: absolute;
+        top: 8%;
+        left: 80%;
+        width: 173px;
+        height: 155px;
+        z-index: 201;
+        overflow: hidden;   
+        transform: scale(0.4);
+    }
+}
+
+
+/*LARGE LANDSCAPE PHONE MEDIA QUERY*/
+@media (orientation: landscape) and (height <= 430px) and (width >= 740px){
+.scrollCont {
+    margin-top: 10vh;
+}
+
+    .fernyvid {
+        /*grid-row: 6/10;*/
+        margin-left: 5vw;
+    }
+    .frond {
+        max-height: 60vh;
+        left: 50%;
+    }
+
+    #about {
+        grid-column: 7 / 8;
+        grid-row: 9 / 10;
+    }
+
+    .logoDiv {
+        align-self: center;
+    }
+
+    .fbLogo img {
+        max-width: 2vw;
+    }
+    
+    
+    .igLogo img {
+        max-width: 2vw;
+        margin-left: 1vw;
+    }
+
+    #treefernOne {
+        position: absolute;
+        top: 9%;
+        left: 6%;
+        width: 176px;
+        height: 170px;
+        z-index: 201;
+        overflow: hidden;
+        transform: scale(0.8);
+    }
+
+}
+

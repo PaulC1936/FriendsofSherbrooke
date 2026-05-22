@@ -1,0 +1,418 @@
+/*@font-face {
+    font-family: 'Maghfirea';
+    src: url('Maghfirea.otf') format('.otf'),
+}*/
+
+@font-face {
+    font-family: 'Poppins';
+    src: url(Poppins-Regular.ttf) format('.ttf'),
+    
+}
+
+a {
+    color: black; /* Hex code for orange-red */
+  }
+
+body{
+        position: relative;
+        margin: 0;
+      }
+      
+      body::before {
+        content: "";
+        position: fixed; /* Keeps the background in place while scrolling */
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        margin: 0%;
+        z-index: -1; /* Places the image behind your text/content */
+        opacity: 0.4;
+        
+        /* Your background image */
+        background-color: #44773a;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+    
+        mask-image: url('fernbackLAND.png');
+        mask-size: cover;
+        mask-repeat: no-repeat;
+        mask-position: center;
+      }
+
+      .home{
+        position: fixed;
+        left: 85%;
+        width: 7vw;
+        height: auto;
+        z-index: 1000;
+        margin-top: 2vh;
+      }
+
+#smooth-wrapper { 
+    height: 100vh; 
+    width: 100%;
+ }
+
+#smooth-content {
+    overflow: visible;
+    will-change: transform;
+}
+
+.signWrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.aboutSign {
+    max-width: 30vw;
+    margin-top: 10vh;
+    transform: translateX(50%)
+}
+
+.aboutSign img {
+    width: 100%;
+}
+
+.flexWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-content: space-between;
+    justify-content: center;
+
+    
+}
+
+.card {
+    background-color: #f0ca5a;
+    height: 40vw;
+    flex-basis: 30%;
+    box-sizing: border-box;
+    border-radius: 4%;
+    border: solid #44773a;
+    margin: 5%;
+    box-shadow: 5px 8px 1px 1px #44773a;
+    overflow: hidden;
+}
+
+.cardless {
+    background-color: #f0ca5a;
+    height: fit-content;
+    flex-basis: 30%;
+    box-sizing: border-box;
+    border-radius: 4%;
+    margin: 5%;
+    overflow: hidden;
+    color:#44773a;
+    font-family: 'Poppins';
+    box-shadow: 5px 8px 1px 1px #44773a;
+    padding: 2%;
+    font-size: 1.2vw;
+}
+
+.text {
+    color:#44773a;
+    position: absolute;
+    font-family: 'Poppins';
+    font-size: 1.2vw;
+    letter-spacing: 2;
+    z-index: 4;
+    padding: 4%;
+    background-color: #f0ca5a;
+    background-blend-mode: overlay;
+    border-radius: 4%;
+    margin: 4%;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 5%;
+    margin-top: 5%;
+    overflow: hidden;
+}
+
+.text:hover {
+background-color: transparent;
+color: whitesmoke;
+}
+
+
+#card1{
+    transform: translateY(5%);
+    background-color: white;
+    box-shadow: none;
+}
+#card1 img {
+position: absolute;
+height: 100vh;
+width: auto;
+object-fit: contain;
+z-index: 0;
+}
+
+
+#card2{
+    transform: translateY(-10%);
+}
+
+#card2 img {
+    position: absolute;
+    max-width: 90%;
+    padding: 10%;
+    margin-left: -15vw;
+    z-index: 5;
+    mix-blend-mode: screen;
+    /*transform: translateY(80%)*/
+}
+
+#card3{
+    transform: translateY(5%)
+}
+
+#card3 img {
+    position: absolute;
+    max-width: 90%;
+    padding: 10%;
+    margin-left: -5vw;
+    z-index: 5;
+    mix-blend-mode: screen;
+    /*transform: translateY(80%)*/
+}
+
+#card4{
+    transform: translateY(-10%);
+    background-color: white;
+    box-shadow: none;
+}
+#card4 img {
+position: absolute;
+height: 100vh;
+width: auto;
+object-fit: contain;
+z-index: 0;
+}
+
+
+#card5{
+    transform: translateY(5%);
+    background-color: white;
+    box-shadow: none;
+}
+#card5 img {
+position: absolute;
+height: 100vh;
+width: auto;
+object-fit: contain;
+z-index: 0;
+}
+
+#card6{
+    transform: translateY(-10%);
+}
+
+#card6 img {
+    position: absolute;
+    max-width: 90%;
+    padding: 10%;
+    margin-left: -20vw;
+    z-index: 5;
+    mix-blend-mode: screen;
+    /*transform: translateY(80%)*/
+}
+
+#card7{
+    transform: translateY(5%);
+    box-shadow: none;
+}
+
+#card7 img {
+    position: absolute;
+    height: 100vh;
+    width: auto;
+    object-fit: contain;
+    z-index: 0;
+    }
+
+#card8{
+    transform: translateY(-10%);
+    background-color: white;
+    box-shadow: none;
+}
+#card8 img {
+position: absolute;
+height: 100vh;
+width: auto;
+object-fit: contain;
+z-index: 0;
+}
+
+
+@media (orientation: portrait) {
+
+    body::before{
+        mask-image: url('fernbackPORT2.png');
+    }
+   
+    .signWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .aboutSign {
+        margin-top: 5vh;
+        max-width: 30vw;
+        transform: translateX(0%)
+
+    }
+
+    .home {
+        width: 10vw;
+    }
+
+    .card{                                                      
+        flex-basis: 80%;  
+        height: 80vh;  
+        margin: 10%;
+        
+    }
+
+    .text {
+        font-size: 3vw;
+        
+    }
+
+
+    .cardless {
+        background-color: #f0ca5a;
+        height: fit-content;
+        flex-basis: 70%;
+        box-sizing: border-box;
+        border-radius: 4%;
+        margin: 5%;
+        overflow: hidden;
+        color:#44773a;
+        font-family: 'Poppins';
+        box-shadow: 5px 8px 1px 1px #44773a;
+        padding: 2%;
+        font-size: 3vw;
+    }
+
+    #card1{
+        transform: translateY(0%)
+    }
+    
+    #card2{
+        transform: translateY(0%)
+    }
+    
+    #card3{
+        transform: translateY(0%)
+    }
+    
+    #card4{
+        transform: translateY(0%)
+    }
+    
+    #card5{
+        transform: translateY(0%)
+    }
+    
+    #card6{
+        transform: translateY(0%)
+    }
+
+    #card7{
+        transform: translateY(0%)
+    }
+
+    #card8{
+        transform: translateY(0%)
+    }
+
+    #card2 img {
+        margin-left: -37vw;
+
+    }
+
+    #card6 img {
+        margin-left: -50vw;
+
+    }
+    
+}
+
+@media (orientation: portrait) and (max-width: 500px) {
+
+    .card {                                                      
+        flex-basis: 80%;  
+        height: 70vh;  
+        margin: 15%;
+    }
+
+    .text {
+        font-size: 3vw;
+    }
+
+}
+
+@media (orientation: portrait) and (max-width: 500px) and (height>=750px) {
+    .card {
+        max-height:45vh;
+    }
+}
+
+/*MOBILE LANDSCAPE*/@media (orientation: landscape) and (max-width: 900px) and (height<=500px) {
+   
+    .card {                                                      
+        flex-basis: 60%;  
+        height: 100vh;  
+        margin: 10%;
+        margin-left: 30%;
+        margin-right: 30%;
+    }
+
+    .text {
+        font-size: 1.5vw;
+    }
+
+    .cardless {
+        flex-basis: 40%;
+        margin-left: 30%;
+        margin-right: 30%;
+        font-size: 1.5vw;
+    }
+
+
+
+    #card4 img {
+        width: 100vw;
+        height: auto;
+    }
+
+    #card5 img {
+        width: 100vw;
+        height: auto;
+    }
+
+    #card7 img {
+        width: 100vw;
+        height: auto;
+    }
+
+    #card8 img {
+        width: 100vw;
+        height: auto;
+    }
+}
+
+
+
+
+
+
+
+
+

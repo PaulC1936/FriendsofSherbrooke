@@ -1,0 +1,367 @@
+@font-face {
+    font-family: 'Poppins';
+    src: url(Poppins-Regular.ttf) format('.ttf'),
+}
+
+body {
+    position: relative;
+    margin: 0;
+    
+  }
+  
+  body::before {
+    content: "";
+    position: fixed; /* Keeps the background in place while scrolling */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Places the image behind your text/content */
+    opacity: 0.4;
+    
+    /* Your background image */
+    background-color: #44773a;
+    background-size: cover;
+    
+    /* The mask (can be a PNG, SVG, or Gradient) */
+    mask-image: url('grassmaskL.png');
+    
+    /* Optional: Adjust mask behavior */
+    -webkit-mask-size: contain;
+    mask-size: cover;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    mask-position: center;
+  }
+
+  .home{
+    position: fixed;
+    left: 85%;
+    width: 7vw;
+    height: auto;
+    z-index: 1000;
+    margin-top: 2vh;
+  }
+
+
+  .signWrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.contactSign {
+    max-width: 30vw;
+    margin-top: 10vh;
+    transform: translateX(50%)
+}
+
+.contactSign img {
+    width: 100%;
+}
+
+.schedWrapper {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.schedSign {
+    max-width: 20vw;
+    margin-top: 10vh;
+    transform: translateX(50%)
+}
+
+.schedSign img {
+    width: 100%;
+}
+
+.card {
+    display: flex;
+    background-color: #f0ca5a;
+    color:#44773a;
+    font-family: 'Poppins';
+    font-size: 1em;
+    letter-spacing: 2;
+    height: auto;
+    flex-basis: 50%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 0.5em;
+    border: solid #44773a;
+    margin: 5%;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 5px 8px 0px 1px #44773a;
+    overflow: hidden;
+}
+
+.card2 {
+    display: flex;
+    background-color: #f0ca5a;
+    color:#44773a;
+    font-family: 'Poppins';
+    font-size: 1em;
+    letter-spacing: 2;
+    height: auto;
+    flex-basis: 90%;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 2vw;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-bottom: 7vh;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+#card3 {
+    justify-content: space-evenly;
+}
+
+.cardHead {
+    flex-basis: 95%;
+    margin: 2vh;
+}
+
+.dates {
+    flex-basis: 25%;
+    display: flex;
+    justify-content: center;
+}
+
+.picWrapper {
+    display: flex;
+    max-height: 60vh;
+    margin-top: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    justify-content: center;
+
+}
+
+.picWrapper img {
+    width: 100%;
+    max-width: 70vw;
+    height: auto;
+    object-fit: cover;
+    mask-image: url(picmask.png);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+.form { 
+    display: flex;
+    max-width: 70vw;
+    height: auto;
+    background-color: #f0ca5a;
+    color:#44773a;
+    font-family: 'Poppins';
+    font-size: 1em;
+    letter-spacing: 2;
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 0.5em;
+    border: solid #44773a;
+    margin: 5%;
+    box-shadow: 5px 8px 0px 1px #44773a;
+    flex-wrap: wrap;
+    align-items: center;
+    align-self: center;
+    justify-content: center;
+    justify-self: center;
+}
+
+#name {
+    flex-basis: 90%;
+    margin: 5%;
+    border-radius: 5px;
+    border: solid #44773a;
+    font-family: 'Poppins';
+    color: #44773a;
+    height: 3em;
+}
+
+#email {
+    flex-basis: 90%;
+    margin: 5%;
+    border-radius: 5px;
+    border: solid #44773a;
+    font-family: 'Poppins';
+    color: #44773a;
+    height: 3em;
+}
+
+#message {
+    flex-basis: 90%;
+    margin: 5%;
+    border-radius: 5px;
+    border: solid #44773a;
+    font-family: 'Poppins';
+    color: #44773a;
+    height: 5em;
+}
+
+#submit {
+    border-radius: 10px;
+    border: solid #44773a;
+    font-family: 'Poppins';
+    color: #f0ca5a;
+    background-color: #44773a;
+
+}
+
+input:-internal-autofill-selected {
+    font-family: 'Poppins';
+    -webkit-text-fill-color: #44773a;
+}
+
+.picWrapper2 {
+    display: flex;
+    max-height: 60vh;
+    margin-top: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    margin-bottom: 5vh;
+    justify-content: center;
+
+}
+
+.picWrapper2 img {
+    width: 100%;
+    max-width: 70vw;
+    height: auto;
+    object-fit: cover;
+    mask-image: url(picmask2.png);
+    mask-size: contain;
+    mask-repeat: no-repeat;
+    mask-position: center;
+}
+
+.flexContainer {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    max-width: 90vw;
+    height: auto;
+    padding: 1vw;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+  
+  .row {
+  display: flex;
+  flex-basis: 40%;
+  background-color: #f0ca5a;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  margin-top: 2vw;
+  margin-bottom: 2vw;
+  border: solid;
+  border-radius: 10px;
+  border-color:#44773a;
+  border-width: 0.3vw;
+  box-shadow: 5px 8px 0px 1px #44773a;
+  
+  }
+  
+  .cell {
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  
+  border-width: 0.2vw;
+  flex-basis: 25vw;
+  color: #44773a;
+  font-family: 'Poppins';
+  font-size: 1em;
+    
+  }
+
+  .space {
+
+    width: 100%;
+    height: 5vh;
+  }
+
+
+
+
+  @media (orientation: portrait){
+
+    body::before{
+        mask-image: url('grassmaskP.png');
+    }
+
+    .signWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .home {
+        width: 10vw;
+    }
+
+    .contactSign {
+        margin-top: 5vh;
+        max-width: 30vw;
+        transform: translateX(0%)
+
+    }
+
+    .schedWrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+
+    .schedSign {
+        margin-top: 5vh;
+        max-width: 20vw;
+        transform: translateX(0%)
+
+    }
+
+    .card {
+        font-size: 0.7em;
+    }
+
+    .card2 {
+        font-size: 0.7em;
+        
+    }
+
+    .dates {
+        flex-basis: 50%;
+        display: flex;
+        justify-content: center;
+        
+    }
+
+    .picWrapper {
+        max-height: 30vh;
+    }
+
+    .picWrapper img {
+        mask-size: contain;
+    }
+
+    .label {
+        font-size: 0.7em;
+    }
+
+    .row {
+     margin: 5vw;
+     flex-basis: 80%;
+    }
+
+    .cell {
+        flex-basis: 100%;
+        flex-direction: column;
+        font-size: 0.7em;
+    }
+  }
