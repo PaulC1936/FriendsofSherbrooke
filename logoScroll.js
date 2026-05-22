@@ -8,7 +8,6 @@ window.addEventListener('load', function() {
 
   const videoSource = document.getElementById("fernyvid");
   if (window.innerWidth <= 768) {
-    body.style.overflow = "visible";
     videoSource.src = "fosfcursive_mob2.mp4";
     videoSource.type = "video/mp4";
     window.onload = function() {
