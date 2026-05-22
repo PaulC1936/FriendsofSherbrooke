@@ -97,7 +97,7 @@ let tl = gsap.timeline({
       end: "top 70%", // End point
       scrub: true, 
       pin: true,   // Links animation to scrollbar (smoothly)
-      markers: false,
+      markers: true,
       onComplete: spritesOff,
       
 }
