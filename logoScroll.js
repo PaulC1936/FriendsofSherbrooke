@@ -6,13 +6,14 @@ window.addEventListener('load', function() {
     loading.style.display = 'none';
   })
 
-  const videoSource = document.getElementById("fernyvid");
-  if (window.innerWidth <= 768) {
+  /*const videoSource = document.getElementById("fernyvid");
+  if (window.innerWidth <= 1024) {
     videoSource.src = "fosfcursive_mob2.mp4";
     videoSource.type = "video/mp4";
     window.onload = function() {
-        /* FERN VID PLAY AND SECTION LOOP - also inside onload  */
-        videoSource.addEventListener('timeupdate', function() {
+         /*FERN VID PLAY AND SECTION LOOP - also inside onload  */
+         let fernyvid = document.getElementById("fernyvid");
+        fernyvid.addEventListener('timeupdate', function() {
             if (this.currentTime >= 6.9) {
                 this.currentTime = 3.9;
                 this.play(); 
@@ -20,38 +21,32 @@ window.addEventListener('load', function() {
         }, false);
         /*let scrollTimer = setTimeout(function() {
             hand.style.display = 'block';
-        }, 15000); */
-        };
-  } else {
+        }, 15000); 
+        };*/
+  /*} else {
     videoSource.src = "fosfcursive_2.webm";
     videoSource.type = "video/webm";
     window.onload = function() {
-        /* FERN VID PLAY AND SECTION LOOP - also inside onload  */
-        videoSource.addEventListener('timeupdate', function() {
+        /* FERN VID PLAY AND SECTION LOOP - also inside onload  
+        fernyvid.addEventListener('timeupdate', function() {
             if (this.currentTime >= 6.9) {
                 this.currentTime = 3.9;
                 this.play(); 
             }
         }, false);
-        /*let scrollTimer = setTimeout(function() {
-            hand.style.display = 'block';
-        }, 15000); */
         };
-  }
+  }*/
   document.getElementById("fernyvid").load();
   
-window.onload = function() {
+/*window.onload = function() {*/
 /* FERN VID PLAY AND SECTION LOOP - also inside onload  */
-videoSource.addEventListener('timeupdate', function() {
+/*videoSource.addEventListener('timeupdate', function() {
     if (this.currentTime >= 6.9) {
         this.currentTime = 3.9;
         this.play(); 
     }
 }, false);
-/*let scrollTimer = setTimeout(function() {
-    hand.style.display = 'block';
-}, 15000); */
-};
+};*/
 
 
 function spaceOff(){

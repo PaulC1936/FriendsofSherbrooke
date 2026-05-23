@@ -164,7 +164,7 @@ body {
     border-radius: 20px;
     padding: 0.5em;
     border: solid #44773a;
-    margin: 5%;
+    margin: 0 auto;
     box-shadow: 5px 8px 0px 1px #44773a;
     flex-wrap: wrap;
     align-items: center;
