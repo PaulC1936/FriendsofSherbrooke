@@ -6,47 +6,30 @@ window.addEventListener('load', function() {
     loading.style.display = 'none';
   })
 
-  /*const videoSource = document.getElementById("fernyvid");
-  if (window.innerWidth <= 1024) {
-    videoSource.src = "fosfcursive_mob2.mp4";
-    videoSource.type = "video/mp4";
-    window.onload = function() {
-         /*FERN VID PLAY AND SECTION LOOP - also inside onload  */
-         let fernyvid = document.getElementById("fernyvid");
+  /*const startTime = performance.now();
+  const fernStatic = document.querySelector('fernStatic')
+  const fernTime = document.querySelector('fernyvid');
+  fernTime.addEventListener('load',(event) => {
+      const loadTime = performance.now() - startTime;
+      if (loadTime>3200){
+        fernTime.style.display = 'none';
+        fernStatic.style.display = 'block'
+      }
+        else {
+        fernTime.style.display = 'block';
+        fernStatic.style.display = 'none'
+        }
+
+  });*/
+
+         /*let fernyvid = document.getElementById("fernyvid");
         fernyvid.addEventListener('timeupdate', function() {
             if (this.currentTime >= 6.9) {
                 this.currentTime = 3.9;
                 this.play(); 
             }
         }, false);
-        /*let scrollTimer = setTimeout(function() {
-            hand.style.display = 'block';
-        }, 15000); 
-        };*/
-  /*} else {
-    videoSource.src = "fosfcursive_2.webm";
-    videoSource.type = "video/webm";
-    window.onload = function() {
-        /* FERN VID PLAY AND SECTION LOOP - also inside onload  
-        fernyvid.addEventListener('timeupdate', function() {
-            if (this.currentTime >= 6.9) {
-                this.currentTime = 3.9;
-                this.play(); 
-            }
-        }, false);
-        };
-  }*/
-  document.getElementById("fernyvid").load();
-  
-/*window.onload = function() {*/
-/* FERN VID PLAY AND SECTION LOOP - also inside onload  */
-/*videoSource.addEventListener('timeupdate', function() {
-    if (this.currentTime >= 6.9) {
-        this.currentTime = 3.9;
-        this.play(); 
-    }
-}, false);
-};*/
+  document.getElementById("fernyvid").load();*/
 
 
 function spaceOff(){
@@ -98,7 +81,7 @@ let tl = gsap.timeline({
 }
   });
 tl.fromTo("body", {backgroundColor: '#d2b48c'}, {backgroundColor: '#eff5eb'});
-tl.fromTo("#fernyvid", {scale: 1, y:'0vh'}, {scale: 0.5, y: '15vh', duration: 2});
+tl.fromTo("#fernStatic", {scale: 1, y:'0vh'}, {scale: 0.5, y: '15vh', duration: 2});
 tl.fromTo("#frond", {yPercent: '300%', opacity: 0, rotate: 0}, {yPercent: '0%', opacity: 1, rotate: 0});
 tl.fromTo("#plantsWrap", {opacity: 1}, {opacity: 0});
 tl.fromTo(".logoDiv", {opacity: 0}, {opacity: 1, stagger: 2})
