@@ -82,6 +82,7 @@ body{
     flex-direction: row;
     align-content: space-between;
     justify-content: center;
+    align-items: center;
 
     
 }
@@ -160,7 +161,6 @@ z-index: 0;
     position: absolute;
     max-width: 90%;
     padding: 10%;
-    margin-left: -15vw;
     z-index: 5;
     mix-blend-mode: screen;
     /*transform: translateY(80%)*/
@@ -174,7 +174,6 @@ z-index: 0;
     position: absolute;
     max-width: 90%;
     padding: 10%;
-    margin-left: -5vw;
     z-index: 5;
     mix-blend-mode: screen;
     /*transform: translateY(80%)*/
@@ -208,14 +207,20 @@ z-index: 0;
 }
 
 #card6{
-    transform: translateY(-10%);
+    transform: translateY(-8%);
+    align-items: center;
+}
+
+.imageWrap {
+    display: flex;
+    justify-content: center;
 }
 
 #card6 img {
     position: absolute;
     max-width: 90%;
+    height: auto;
     padding: 10%;
-    margin-left: -20vw;
     z-index: 5;
     mix-blend-mode: screen;
     /*transform: translateY(80%)*/
@@ -334,15 +339,7 @@ z-index: 0;
         transform: translateY(0%)
     }
 
-    #card2 img {
-        margin-left: -37vw;
-
-    }
-
-    #card6 img {
-        margin-left: -50vw;
-
-    }
+  
     
 }
 
